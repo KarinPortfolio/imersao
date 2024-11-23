@@ -5,7 +5,7 @@ import routes from "./src/routes/postsRoutes.js";
 // Cria uma nova instância do servidor Express
 const app = express();
 // Serve arquivos estáticos
-app.use(express.static("uploads"))
+app.use(express.static("uploads"));
 // Registra as rotas no servidor Express
 routes(app);
 

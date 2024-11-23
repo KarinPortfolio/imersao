@@ -29,6 +29,6 @@ export async function criarPost(novoPost) {
 export async function atualizarPost(id, novoPost) {
   const db = conexao.db("imercao");
   const colecao = db.collection("posts");
-  const objID = ObjectId.createFromHexString(id);
+  const objID = ObjectId.createFromHexString(id)
     return colecao.updateOne({_id: new ObjectId(objID)}, {$set:novoPost});
   }
